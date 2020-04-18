@@ -1,6 +1,7 @@
 html {
     font-size: 62.5%;
 }
+
 .website-header {
     margin-top: 1.5rem;
 }
@@ -79,6 +80,186 @@ html {
 
 .box10 {
     background-color: dodgerblue;
+}
+
+@media (max-width: 800px) {
+    .website-header img {
+        float: none;
+        margin: 1rem 40%;
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+
+    .website-header {
+        justify-content: center;
+    }
+    
+    .website-header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .website-header nav a {
+        padding: 1rem;
+        border: .1rem solid lightgray;
+        border-radius: 1rem;
+        background: white;
+        margin: 0rem 10%;
+        text-align: center;
+        justify-content: stretch;
+        color: lightgray;
+        width: 90vw;
+    }
+
+    .website-header nav a:hover {
+        border: black;
+        background: darkgray;
+        color: black;
+    }
+
+    #highlight-picture {
+        height: 15rem;
+        width: 96vw;
+    }
+
+    #products {
+        display: none;
+    }
+
+    .top-content {
+        flex-direction: column;
+    }
+
+    .text-container h2 {
+        margin-left: 1rem;
+    }
+
+    .text-container p {
+        color:darkgray;
+        margin-left: 1rem;
+    }
+
+    .text-container h2 {
+        font-size: 1.7rem;
+    }
+    .middle-content h2 {
+        font-size: 1.7rem;
+    }
+
+    .boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boxes div{
+        height: 10rem;
+        width: 10rem;
+        margin: 1rem;
+    }
+
+    .bottom-content .text-container{
+        display: none;
+    }
+
+    footer nav a {
+        display: none;
+    }
+}
+
+@media (max-width: 550px) {
+    .website-header img {
+        float: none;
+        margin: 1rem 40%;
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+
+    .website-header {
+        justify-content: center;
+        width: 100vw;
+    }
+    
+    .website-header nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100vw;
+    }
+
+    .website-header nav a {
+        padding: .5rem;
+        border: .1rem solid lightgray;
+        border-radius: 1rem;
+        background: white;
+        margin: 0rem 7%;
+        text-align: center;
+        justify-content: stretch;
+        color: lightgray;
+        width: 90vw
+    }
+
+    .website-header nav a:hover {
+        border: black;
+        background: darkgray;
+        color: black;
+    }
+
+    #highlight-picture {
+        height: 15rem;
+        width: 100vw;
+    }
+    
+    #products {
+        display: none;
+    }
+
+    .top-content {
+        flex-direction: column;
+    }
+
+    .text-container h2 {
+        margin-left: 2rem;
+    }
+
+    .text-container p {
+        color:darkgray;
+        margin-left: 2rem;
+    }
+
+    .text-container h2 {
+        font-size: 1.7rem;
+    }
+
+    .boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boxes div{
+        height: 10rem;
+        width: 10rem;
+        margin: 1rem;
+    }
+
+    .middle-content h2 {
+        font-size: 1.5rem;
+        margin: 1rem;
+    }
+
+    .boxes{
+        width: 100vw;
+        font-size: 1.4rem;
+    }
+
+    .bottom-content .text-container{
+        display: none;
+    }
+
+    footer nav a {
+        display: none;
+    }
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
