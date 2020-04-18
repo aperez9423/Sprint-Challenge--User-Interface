@@ -22,8 +22,8 @@ html {
 }
 
 #highlight-picture {
-    margin:1rem;
-    margin-top:1rem;
+    margin: 1rem;
+    margin-top:1 rem;
 }
 
 .boxes {
@@ -36,7 +36,7 @@ html {
 .boxes div{
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     color:white;
     height: 7rem;
     width: 7rem;
@@ -83,22 +83,22 @@ html {
 }
 
 @media (max-width: 800px) {
+    .container {
+        max-width: 100%;
+    }
+
     .website-header img {
         float: none;
         margin: 1rem 40%;
         margin-bottom: 3rem;
         text-align: center;
     }
-
-    .website-header {
-        justify-content: center;
-    }
     
     .website-header nav {
-        display: flex;
         flex-direction: column;
-        align-items: center;
-        width: 100vw;
+        justify-content: center;
+        width: 75%;
+        margin-left: 7rem;
     }
 
     .website-header nav a {
@@ -106,11 +106,9 @@ html {
         border: .1rem solid lightgray;
         border-radius: 1rem;
         background: white;
-        margin: 0rem 10%;
+        margin: 0rem;
         text-align: center;
-        justify-content: stretch;
         color: lightgray;
-        width: 90vw;
     }
 
     .website-header nav a:hover {
@@ -120,8 +118,7 @@ html {
     }
 
     #highlight-picture {
-        height: 15rem;
-        width: 96vw;
+        min-width: 100%;
     }
 
     #products {
@@ -132,20 +129,26 @@ html {
         flex-direction: column;
     }
 
+    .top-content .text-container {
+        min-width: 100vw;
+    }
+
     .text-container h2 {
-        margin-left: 1rem;
+        margin-left: 2rem;
     }
 
     .text-container p {
         color:darkgray;
-        margin-left: 1rem;
+        margin-left: 2rem;
     }
 
     .text-container h2 {
         font-size: 1.7rem;
     }
+
     .middle-content h2 {
         font-size: 1.7rem;
+        margin-left: 2rem;
     }
 
     .boxes {
@@ -153,7 +156,7 @@ html {
         align-items: center;
     }
 
-    .boxes div{
+    .boxes div {
         height: 10rem;
         width: 10rem;
         margin: 1rem;
@@ -168,36 +171,33 @@ html {
     }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 500px) {
+    .container {
+        max-width: 100%;
+    }
+
     .website-header img {
         float: none;
         margin: 1rem 40%;
         margin-bottom: 3rem;
         text-align: center;
     }
-
-    .website-header {
-        justify-content: center;
-        width: 100vw;
-    }
     
     .website-header nav {
-        display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 100vw;
+        width: 75%;
+        margin-left: 7rem;
     }
 
     .website-header nav a {
-        padding: .5rem;
+        padding: 1rem;
         border: .1rem solid lightgray;
         border-radius: 1rem;
         background: white;
-        margin: 0rem 7%;
+        margin: 0rem;
         text-align: center;
-        justify-content: stretch;
         color: lightgray;
-        width: 90vw
     }
 
     .website-header nav a:hover {
@@ -207,16 +207,19 @@ html {
     }
 
     #highlight-picture {
-        height: 15rem;
-        width: 100vw;
+        min-width: 100%;
     }
-    
+
     #products {
         display: none;
     }
 
     .top-content {
         flex-direction: column;
+    }
+
+    .top-content .text-container {
+        min-width: 100vw;
     }
 
     .text-container h2 {
@@ -232,25 +235,20 @@ html {
         font-size: 1.7rem;
     }
 
+    .middle-content h2 {
+        font-size: 1.7rem;
+        margin-left: 2rem;
+    }
+
     .boxes {
         flex-direction: column;
         align-items: center;
     }
 
-    .boxes div{
+    .boxes div {
         height: 10rem;
         width: 10rem;
         margin: 1rem;
-    }
-
-    .middle-content h2 {
-        font-size: 1.5rem;
-        margin: 1rem;
-    }
-
-    .boxes{
-        width: 100vw;
-        font-size: 1.4rem;
     }
 
     .bottom-content .text-container{
@@ -344,7 +342,7 @@ p {
 }
 
 .top-content .text-container {
-    width: 48%;
+    width:48%;
     padding: 0 1%;
     padding-bottom: 20px;  
 }
