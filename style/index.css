@@ -1,3 +1,86 @@
+html {
+    font-size: 62.5%;
+}
+.website-header {
+    margin-top: 1.5rem;
+}
+.website-header img {
+    float: left;
+}
+
+.website-header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.website-header nav a {
+    text-decoration:none;
+    color:black;
+    padding: 1.5rem;
+}
+
+#highlight-picture {
+    margin:1rem;
+    margin-top:1rem;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: space-evenly;
+    margin: .5rem;
+}
+
+.boxes div{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    color:white;
+    height: 7rem;
+    width: 7rem;
+    margin: 1rem;
+}
+.box1 {
+    background-color: teal;
+}
+
+.box2 {
+    background-color: gold;
+}
+
+.box3 {
+    background-color: cadetblue;
+}
+
+.box4 {
+    background-color: coral;
+}
+
+.box5 {
+    background-color: crimson;
+}
+
+.box6 {
+    background-color: forestgreen;
+}
+
+.box7 {
+    background-color: darkorchid;
+}
+
+.box8 {
+    background-color: hotpink;
+}
+
+.box9 {
+    background-color: indigo;
+}
+
+.box10 {
+    background-color: dodgerblue;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -144,3 +227,4 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
